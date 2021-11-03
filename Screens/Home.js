@@ -39,7 +39,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
         </View>
      
-        <View style={{height:200}}>
+        <View style={{height:20}}>
      <TouchableOpacity onPress={this.displayData}>
        <Text>Click to display data</Text>
      </TouchableOpacity>
