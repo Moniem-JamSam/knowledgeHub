@@ -20,6 +20,9 @@ import ProfilePage from './Screens/ProfilePage';
 import SearchJobPage from './Screens/SearchJobPage';
 import OwnStorePage from './Screens/OwnStorePage';
 import EditPage from './Screens/EditPage';
+import PaymentScreen from './Screens/PaymentScreen';
+import BuyPage from './Screens/BuyPage';
+import InPutPayPal from './Screens/InPutPayPal';
 
 
 
@@ -96,6 +99,9 @@ function App() {
         <Stack.Screen name="SearchJobPage" component={SearchJobPage} />
         <Stack.Screen name="OwnStorePage" component={OwnStorePage} />
         <Stack.Screen name="EditPage" component={EditPage} />
+        <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+        <Stack.Screen name="BuyPage" component={BuyPage} />
+        <Stack.Screen name="InPutPayPal" component={InPutPayPal} />
 
 
         

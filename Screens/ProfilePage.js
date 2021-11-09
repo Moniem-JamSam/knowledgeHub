@@ -171,6 +171,24 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </TouchableOpacity>
 
             </View>
+   
+ 
+
+
+
+            <View style={styles.RowCardContainer}>
+
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('PaymentScreen') }>
+            <Card containerStyle={styles.MostReadCardstylePayment} >
+            
+           
+
+            <Text style={styles.titleText}>Payment Details </Text>
+            <Text style={styles.subtitlePayment}>Here you can see your Paid Dates and Payment ways </Text>
+          
+            </Card>
+            </TouchableOpacity>
+            </View>
             <Divider
                 orientation="horizontal"
                 
@@ -287,11 +305,26 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         margin:5,
         padding:1
       },
+      MostReadCardstylePayment:{
+        justifyContent:'center',
+        alignItems:'center',
+        width:300,
+        height:100,
+        borderRadius:25,
+        margin:5,
+        padding:1
+      },
       titleText:{
           color:'#2499D6',
           textAlign:'center',
-          margin:10,
+          margin:5,
           fontSize:18
+      },
+      subtitlePayment:{
+        color:'#000',
+        textAlign:'center',
+        
+        fontSize:15
       },
       SettingContainer:{
         flexDirection:'row',
