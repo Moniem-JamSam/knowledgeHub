@@ -29,7 +29,8 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
                     />
           </View>
             <View style={styles.CardContainer}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('InPutPayPal') }>
+
+            <TouchableOpacity style={styles.cardContainerShadow} onPress={() => this.props.navigation.navigate('InPutPayPal') }>
             <Card containerStyle={styles.cardstyle} >
 
         <Image
@@ -43,7 +44,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </TouchableOpacity>
             </View>
             <View style={styles.CardContainer}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('InPutPayPal') }>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('InPutPageVisa') }>
             <Card containerStyle={styles.cardstyle} >
         <View style={{flexDirection:'row' }}>
         <Image
@@ -62,7 +63,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </TouchableOpacity>
             </View>
             <View style={styles.CardContainer}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('InPutPayPal') }>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('JamUnity') }>
             <Card containerStyle={styles.cardstyle} >
         <View style={{flexDirection:'row' }}>
         <Image
@@ -105,7 +106,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         borderBottomLeftRadius:150
       },
       CardContainer:{
-          margin:10
+          margin:5
       },
       tinyLogo: {
         
@@ -116,7 +117,8 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
       cardstyle:{
         borderRadius:25,
         alignItems:'center',
-        backgroundColor:'#EEE'
+        backgroundColor:'#EEE',
+        shadowColor:'black'
     
       },
       homePic:{
@@ -131,8 +133,8 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
       
       },
       cardAvtarUnity:{
-        width:320,
-        height:200,
+        width:300,
+        height:150,
         resizeMode:'contain',
         borderRadius:15
       
@@ -150,5 +152,6 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
    
 
       },
+     
 
     });

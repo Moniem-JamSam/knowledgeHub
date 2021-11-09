@@ -23,6 +23,8 @@ import EditPage from './Screens/EditPage';
 import PaymentScreen from './Screens/PaymentScreen';
 import BuyPage from './Screens/BuyPage';
 import InPutPayPal from './Screens/InPutPayPal';
+import InPutPageVisa from './Screens/InPutPageVisa';
+import JamUnity from './Screens/JamUnity';
 
 
 
@@ -102,6 +104,8 @@ function App() {
         <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
         <Stack.Screen name="BuyPage" component={BuyPage} />
         <Stack.Screen name="InPutPayPal" component={InPutPayPal} />
+        <Stack.Screen name="InPutPageVisa" component={InPutPageVisa} />
+        <Stack.Screen name="JamUnity" component={JamUnity} />
 
 
         

@@ -43,7 +43,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </TouchableOpacity>
             </View>
             <View style={styles.CardContainer}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('PaymentScreen') }>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('BuyPage') }>
             <Card containerStyle={styles.cardstyle} >
         <View style={{flexDirection:'row' }}>
         <Image

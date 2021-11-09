@@ -7,7 +7,7 @@ import { Card, ListItem, Button, Icon,Divider,CheckBox  } from 'react-native-ele
 
 
 
- class InPutPayPal extends Component {
+ class InPutPageVisa extends Component {
  
     
    
@@ -31,7 +31,12 @@ import { Card, ListItem, Button, Icon,Divider,CheckBox  } from 'react-native-ele
         <View style={styles.FormStyle}>
           <View style={styles.imgContainerPay}>
         <Image
-                        source={require('../assets/Images/PaypalLogo.png')}
+                        source={require('../assets/Images/MasterCard.png')}
+                        style={styles.cardAvtar} 
+
+                    />
+        <Image
+                        source={require('../assets/Images/VisaBuy.png')}
                         style={styles.cardAvtar} 
 
                     />
@@ -116,7 +121,7 @@ import { Card, ListItem, Button, Icon,Divider,CheckBox  } from 'react-native-ele
       );
     }
   }
-  export default InPutPayPal;
+  export default InPutPageVisa;
 
 
   const styles = StyleSheet.create({
@@ -200,17 +205,18 @@ import { Card, ListItem, Button, Icon,Divider,CheckBox  } from 'react-native-ele
           margin:10
       },
       cardAvtar:{
-        width:'100%',
+        width:140,
         height:150,
         resizeMode:'contain',
         opacity:0.8
      
          },
         imgContainerPay:{
+        flexDirection:'row',
         width:300,
         height:150,
-        borderRadius:25,
-        backgroundColor:'#fff',
+        
+       
      
          },
 
