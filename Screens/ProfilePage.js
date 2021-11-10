@@ -110,7 +110,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
 
             </View>
             <View style={styles.RowCardContainer}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('FavoritesPage') }>
             <Card containerStyle={styles.MostReadCardstyle} >
         <View>
         <Image
@@ -124,7 +124,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </Card>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('DownloadsPage') }>
         <Card containerStyle={styles.MostReadCardstyle} >
         <View>
         <Image
@@ -141,7 +141,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
             </View>
             <View style={styles.RowCardContainer}>
 
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('BookMark') }>
         <Card containerStyle={styles.MostReadCardstyle} >
         <View>
         <Image
@@ -156,7 +156,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         </TouchableOpacity>
 
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('UploadsPage') }>
         <Card containerStyle={styles.MostReadCardstyle} >
         <View>
         <Image

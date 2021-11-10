@@ -25,6 +25,10 @@ import BuyPage from './Screens/BuyPage';
 import InPutPayPal from './Screens/InPutPayPal';
 import InPutPageVisa from './Screens/InPutPageVisa';
 import JamUnity from './Screens/JamUnity';
+import BookMark from './Screens/BookMark';
+import FavoritesPage from './Screens/FavoritesPage';
+import DownloadsPage from './Screens/DownloadsPage';
+import UploadsPage from './Screens/UploadsPage';
 
 
 
@@ -106,6 +110,10 @@ function App() {
         <Stack.Screen name="InPutPayPal" component={InPutPayPal} />
         <Stack.Screen name="InPutPageVisa" component={InPutPageVisa} />
         <Stack.Screen name="JamUnity" component={JamUnity} />
+        <Stack.Screen name="BookMark" component={BookMark} />
+        <Stack.Screen name="FavoritesPage" component={FavoritesPage} />
+        <Stack.Screen name="DownloadsPage" component={DownloadsPage} />
+        <Stack.Screen name="UploadsPage" component={UploadsPage} />
 
 
         

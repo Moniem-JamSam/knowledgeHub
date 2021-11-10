@@ -18,6 +18,7 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
         <View style={styles.MainContainer}>
         <View style={styles.HeadConatianer}>
         <View style={styles.Imgcontainer}>
+        
         <Image
                             source={require('../assets/Images/BOOK1.jpg')}
                             style={styles.UpAvtar} 
@@ -32,6 +33,7 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
         <Text style={styles.PageNumber}>120 Page</Text>
         <Text style={styles.LanguageStyle}>English</Text>
         <View style={{flexDirection:'row',margin:10}}>
+          
         <Image
                             source={require('../assets/Images/full_star1copy.png')}
                             style={styles.StarAvtar} 
@@ -75,6 +77,7 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
         <Text style={styles.ReadMoreText2}> Robert Kiyosaki</Text>
         </View>
         <View style={{flexDirection:'row',margin:10}}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <Image
                             source={require('../assets/Images/BOOK1.jpg')}
                             style={styles.BooksReadMore} 
@@ -90,6 +93,31 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
                             style={styles.BooksReadMore} 
 
                         />
+        <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+        <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+        <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+        <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+
+
+
+
+                        </ScrollView>
 
         </View>
         </View>
@@ -105,6 +133,7 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
         
         </View>
         <View style={{flexDirection:'row',margin:10}}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <Image
                             source={require('../assets/Images/BOOK1.jpg')}
                             style={styles.BooksReadMore} 
@@ -120,6 +149,17 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
                             style={styles.BooksReadMore} 
 
                         />
+         <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+         <Image
+                            source={require('../assets/Images/BOOK1.jpg')}
+                            style={styles.BooksReadMore} 
+
+                        />
+                        </ScrollView>
 
         </View>
         </View>
@@ -140,7 +180,7 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
       color="white"
     />
   } 
-  title=" Share"  onPress={() => this.props.navigation.navigate('Loginscreen') }containerStyle={{width:150}} titleStyle={{color:'#fff'}} buttonStyle={{borderRadius:15,backgroundColor:'#1B73A0',margin:10}}/>
+  title=" Share"  onPress={() => this.props.navigation.navigate('Homescreen') }containerStyle={{width:120}} titleStyle={{color:'#fff'}} buttonStyle={{borderRadius:15,backgroundColor:'#1B73A0',margin:5}}/>
 
         <Button
         icon={
@@ -151,7 +191,16 @@ import { Card, ListItem, Button,Divider  } from 'react-native-elements'
       color="#1B73A0"
     />
   } 
-         title=" View"  onPress={() => this.props.navigation.navigate('Loginscreen') }containerStyle={{width:150}} titleStyle={{color:'#1B73A0'}} buttonStyle={{borderRadius:15,backgroundColor:'#eee',margin:10,borderColor:'#1B73A0',borderWidth:2}}/>
+         title=" View"  onPress={() => this.props.navigation.navigate('Homescreen') }containerStyle={{width:120}} titleStyle={{color:'#1B73A0'}} buttonStyle={{borderRadius:15,backgroundColor:'#eee',margin:5,borderColor:'#1B73A0',borderWidth:2}}/>
+         <Button icon={
+    <Icon
+            
+      name="download"
+      size={15}
+      color="white"
+    />
+  } 
+  title=" Download"  onPress={() => this.props.navigation.navigate('Homescreen') }containerStyle={{width:120}} titleStyle={{color:'#fff'}} buttonStyle={{borderRadius:15,backgroundColor:'#1B73A0',margin:5}}/>
         
 
         </View>

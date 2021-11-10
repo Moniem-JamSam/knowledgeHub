@@ -106,7 +106,7 @@ fetch('https://hub.jamjoog.com/users/user_registration5.php', {
  
           style={styles.TextInputStyleClass}
         />
-          <Text style={styles.userTEXT}>phoneNumber adress</Text>
+          <Text style={styles.userTEXT}>PhoneNumber</Text>
         <TextInput
           
           // Adding hint in Text Input using Place holder.

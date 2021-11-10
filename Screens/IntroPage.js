@@ -69,7 +69,7 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
   const styles = StyleSheet.create({
     MainContainer:{
         backgroundColor:'#2599D5',
-        height:'100%',
+        height:679,
         flex:1,
       },
     imgContainer:{
