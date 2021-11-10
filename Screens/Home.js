@@ -39,12 +39,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
         </View>
      
-        <View style={{height:20}}>
-     <TouchableOpacity onPress={this.displayData}>
-       <Text>Click to display data</Text>
-     </TouchableOpacity>
-     {this.state.user ?  <Text>Welcome {this.state.user} </Text>: null}
-   </View> 
+
    
         <TouchableOpacity onPress={() => this.props.navigation.navigate('TemplatesPage') }>
         <Card containerStyle={styles.cardstyle}   >
@@ -252,9 +247,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
         </View>
         </Card>
 </TouchableOpacity>
-
-        <Card containerStyle={styles.MostReadCardstyle}  >
-        <View>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <Card containerStyle={styles.MostReadCardstyle} >
+        <View style={{margin:10}}>
         <Image
                         source={require('../assets/Images/BOOK1.jpg')}
                         style={styles.BookStyle} 
@@ -264,8 +259,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
           <Text style={styles.WriterText}>@layan123</Text>
         </View>
         </Card>
+</TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
         <Card containerStyle={styles.MostReadCardstyle} >
-        <View>
+        <View style={{margin:10}}>
         <Image
                         source={require('../assets/Images/BOOK1.jpg')}
                         style={styles.BookStyle} 
@@ -274,7 +271,62 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
           <Text style={styles.PriceText}>Free</Text>
           <Text style={styles.WriterText}>@layan123</Text>
         </View>
-            </Card>
+        </Card>
+</TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <Card containerStyle={styles.MostReadCardstyle} >
+        <View style={{margin:10}}>
+        <Image
+                        source={require('../assets/Images/BOOK1.jpg')}
+                        style={styles.BookStyle} 
+
+                    />
+          <Text style={styles.PriceText}>Free</Text>
+          <Text style={styles.WriterText}>@layan123</Text>
+        </View>
+        </Card>
+</TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <Card containerStyle={styles.MostReadCardstyle} >
+        <View style={{margin:10}}>
+        <Image
+                        source={require('../assets/Images/BOOK1.jpg')}
+                        style={styles.BookStyle} 
+
+                    />
+          <Text style={styles.PriceText}>Free</Text>
+          <Text style={styles.WriterText}>@layan123</Text>
+        </View>
+        </Card>
+</TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <Card containerStyle={styles.MostReadCardstyle} >
+        <View style={{margin:10}}>
+        <Image
+                        source={require('../assets/Images/BOOK1.jpg')}
+                        style={styles.BookStyle} 
+
+                    />
+          <Text style={styles.PriceText}>Free</Text>
+          <Text style={styles.WriterText}>@layan123</Text>
+        </View>
+        </Card>
+</TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('BookDetailsPage') }>
+        <Card containerStyle={styles.MostReadCardstyle} >
+        <View style={{margin:10}}>
+        <Image
+                        source={require('../assets/Images/BOOK1.jpg')}
+                        style={styles.BookStyle} 
+
+                    />
+          <Text style={styles.PriceText}>Free</Text>
+          <Text style={styles.WriterText}>@layan123</Text>
+        </View>
+        </Card>
+</TouchableOpacity>
+
+        
     </ScrollView>
             </View>
             </View>
@@ -387,7 +439,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
         
         CardText:{
           fontSize:30,
-          width:150,
+          width:'55%',
           margin:10,
           marginTop:45,
           color:'#2499D6'
@@ -470,15 +522,16 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
         },
         Smallcardstyle:{
           borderRadius:25,
-          margin:10
+          margin:10,
+          width:'50%'
         },
         SmallcardAvtar:{
-          width:70,
+          width:'40%',
           height:100,
         },
         SmallCardText:{
           fontSize:15,
-          width:65,
+          width:'50%',
           margin:5,
           marginTop:30,
           color:'#2499D6'
