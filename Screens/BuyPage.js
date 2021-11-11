@@ -49,12 +49,12 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
         <View style={{flexDirection:'row' }}>
         <Image
                         source={require('../assets/Images/MasterCard.png')}
-                        style={styles.cardAvtar} 
+                        style={styles.cardAvtarMV} 
 
                     />
         <Image
                         source={require('../assets/Images/VisaBuy.png')}
-                        style={styles.cardAvtar} 
+                        style={styles.cardAvtarMV} 
 
                     />
      
@@ -128,6 +128,12 @@ import { Card, ListItem, Button, Icon,Divider  } from 'react-native-elements'
       },
       cardAvtar:{
         width:170,
+        height:150,
+        resizeMode:'contain'
+      
+      },
+      cardAvtarMV:{
+        width:'50%',
         height:150,
         resizeMode:'contain'
       

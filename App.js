@@ -29,6 +29,7 @@ import BookMark from './Screens/BookMark';
 import FavoritesPage from './Screens/FavoritesPage';
 import DownloadsPage from './Screens/DownloadsPage';
 import UploadsPage from './Screens/UploadsPage';
+import SplashScreen from './Screens/SplashScreen';
 
 
 
@@ -41,6 +42,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="SplashScreen" component={SplashScreen}
+       options={{headerShown: false}}
+      />
         <Stack.Screen 
         options={{headerStyle:{backgroundColor:'#2599D5'},
         headerTintColor:'#fff',
@@ -114,6 +118,7 @@ function App() {
         <Stack.Screen name="FavoritesPage" component={FavoritesPage} />
         <Stack.Screen name="DownloadsPage" component={DownloadsPage} />
         <Stack.Screen name="UploadsPage" component={UploadsPage} />
+        
 
 
         
